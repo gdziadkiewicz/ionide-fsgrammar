@@ -42,6 +42,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="paket.references" />
     <Compile Include="..\paket-files\Ionide\ionide-vscode-helpers\Fable.Import.Axios.fs">
       <Paket>True</Paket>
       <Link>paket-files/Fable.Import.Axios.fs</Link>
@@ -55,9 +56,8 @@
       <Link>paket-files/Helpers.fs</Link>
     </Compile>
     <Compile Include="Fable.Import.VSCode.Textmate.fs" />
-    <Compile Include="FSharp.SyntaxTest.fs" />
+    <Compile Include="syntaxtool.fs" />
     <None Include="Script.fsx" />
-    <None Include="paket.references" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">14</MinimumVisualStudioVersion>
