@@ -8,7 +8,6 @@
       "type": "extensionHost",
       "runtimeExecutable": "${execPath}",      
       "args": [
-
         // open the extension instace in this directory
         "${workspaceRoot}/sample-code",
         // launch the extension host using the package in this directory

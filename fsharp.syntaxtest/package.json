@@ -22,18 +22,13 @@
   "engines": {
     "vscode": "^0.10.0"
   },
+  "main": "./syntaxtool",
   "contributes": {
     "languages": [
       {
         "id": "fsharp",
-        "aliases": [
-          "F# Syntax"
-        ],
-        "extensions": [
-          ".fs",
-          ".fsx",
-          ".fsi"
-        ],
+        "aliases": [ "F# Syntax" ],
+        "extensions": [ ".fs", ".fsx", ".fsi" ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -81,8 +76,7 @@
   "dependencies": {
     "axios": "^0.13.1",
     "fable-core": "^0.5.4",
-    "node-gyp": "^3.4.0",
-    "vscode-textmate": "^2.1.1"
+    "vscode-textmate": "2.1.1"
   },
   "devDependencies": {
     "vscode": "^0.11.17",

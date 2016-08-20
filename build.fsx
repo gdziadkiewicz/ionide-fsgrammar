@@ -79,4 +79,4 @@ let codeTool =
 
 CopyGrammar ==> BuildExtension
 
-RunTargetOrDefault Notify
+RunTargetOrDefault BuildExtension 

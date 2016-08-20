@@ -28,6 +28,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fsharp.syntaxtest", "fsharp.syntaxtest", "{FBDCCF5A-C599-4D52-AEB6-0983D89A21F1}"
 	ProjectSection(SolutionItems) = preProject
 		fsharp.syntaxtest\.vscodeignore = fsharp.syntaxtest\.vscodeignore
+		fsharp.syntaxtest\build\config.gypi = fsharp.syntaxtest\build\config.gypi
 		fsharp.syntaxtest\language-configuration.json = fsharp.syntaxtest\language-configuration.json
 		fsharp.syntaxtest\package.json = fsharp.syntaxtest\package.json
 	EndProjectSection
@@ -40,6 +41,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vscode", ".vscode", "{15A1
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleCode", "sample-code\SampleCode.fsproj", "{3451B674-AAFF-4F5F-8350-F7D2D97704DB}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.SyntaxTools", "src\FSharp.SyntaxTools.fsproj", "{23330E1D-8FC6-4040-92D3-D15E0C38E0DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "declarations", "declarations", "{CFDF21FB-FC84-459A-88E4-0B522B29241C}"
+	ProjectSection(SolutionItems) = preProject
+		declarations\main.d.ts = declarations\main.d.ts
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +58,10 @@ Global
 		{3451B674-AAFF-4F5F-8350-F7D2D97704DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3451B674-AAFF-4F5F-8350-F7D2D97704DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3451B674-AAFF-4F5F-8350-F7D2D97704DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23330E1D-8FC6-4040-92D3-D15E0C38E0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23330E1D-8FC6-4040-92D3-D15E0C38E0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23330E1D-8FC6-4040-92D3-D15E0C38E0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23330E1D-8FC6-4040-92D3-D15E0C38E0DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

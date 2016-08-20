@@ -18,6 +18,7 @@
     }
   ],
   "osx":      { "command": "${workspaceRoot}/build.sh"    },
+  "linux":    { "command": "${workspaceRoot}/build.sh"    },
   "windows":  { "command": "${workspaceRoot}/build.cmd"   },
   // The target that FAKE will run
   "args": [ "BuildExtension" ]  
