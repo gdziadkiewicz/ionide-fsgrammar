@@ -1,5 +1,5 @@
 {
-  "name": "FSharp-SyntaxTest",
+  "name": "FSharp.SyntaxTool",
   "version": "0.0.0",
   "publisher": "Ionide",
   "description": "Dev Tool for Quick Syntax Grammar Testing",
@@ -56,8 +56,8 @@
     ],
     "commands": [
       {
-        "command": "",
-        "title": ""
+        "command": "syntaxTools.TokenizeFile",
+        "title": "Get Textmate tokens for active editor"
       }
     ],
     "outputChannels": [
@@ -65,7 +65,8 @@
     ]
   },
   "activationEvents": [
-    ""
+    "onLanguage:fsharp",
+    "onCommand:syntaxTools.TokenizeFile"
   ],
   "extensionDependencies": [
     "vscode.fsharp"
@@ -76,7 +77,7 @@
   "dependencies": {
     "axios": "^0.13.1",
     "fable-core": "^0.5.4",
-    "vscode-textmate": "2.1.1"
+    "vscode-textmate": "2.1.1"    
   },
   "devDependencies": {
     "vscode": "^0.11.17",

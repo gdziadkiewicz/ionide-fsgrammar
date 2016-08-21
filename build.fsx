@@ -55,7 +55,7 @@ Target cg  (fun _ ->
 )
 
 
-let InstallDependencies & dep = "InstallDependencies" 
+let Packages & dep = "Packages" 
 Target dep  (fun () ->
     trace "Installing FSharp.SyntaxTools npm packages"
     // install any necessary dependencies for the FSharp-SyntaxTest Extension
@@ -79,7 +79,7 @@ let codeTool =
 let needsInstall = not <| fileExists setupcomplete
 
 CopyGrammar 
- ==> InstallDependencies
+ ==> Packages
  =?> (FableCompile, needsInstall) 
 
 CopyGrammar 

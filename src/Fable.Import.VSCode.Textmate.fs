@@ -13,7 +13,7 @@ module textmate =
 
 
     /// The registry that will hold all grammars.
-    and [<AllowNullLiteral>] [<Import("*","Registry")>] Registry(?locator: IGrammarLocator) =
+    and [<AllowNullLiteral>] [<Import("Registry","vscode-textmate")>] Registry(?locator: IGrammarLocator) =
         
         /// Load the grammar for `scopeName` and all referenced included grammars asynchronously.
         member __.loadGrammar(scopeName: string, callback: Func<obj, IGrammar, unit>): unit = failwith "JS only"

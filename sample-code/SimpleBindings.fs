@@ -36,7 +36,6 @@ let e_float64    = 0x0000000000000000LF
 
 let a_bigint     = 304554I
 
-
 let binding = "empty"
 let aString : string = "typed"
 
